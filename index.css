@@ -1,11 +1,17 @@
-body{
-    display: flex;
-    height: 90vh;
-    padding:36px;
-    gap: 8px;
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
-.column{
+
+
+
+.hidden {
+    display: none !important
+}
+
+.column {
     flex:1;
     border: solid 1px black;
     padding:10px;
@@ -14,15 +20,15 @@ body{
     gap: 6px;
 }
 
-.left-sidebar{
+.left-sidebar {
     
 }
-.sub-container{
+.sub-container {
     background-color: rgb(225, 168, 168);
     flex:1;
 }
 
-.littleColumns{
+.littleColumns {
     display: flex;
     padding:5px;
     gap:6px;
@@ -58,7 +64,7 @@ body{
     display: flex;
     background-color: paleturquoise;
     gap:6px;
-    flex:2.1;
+    flex: 1;
     flex-direction: column;
     padding:5px;
 }
@@ -87,4 +93,76 @@ body{
 .WC{
     background-color: red;
     height:200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    padding:36px;
+    background-color: rgb(255, 255, 251);
+}
+
+
+
+.container {
+    height: 500px;
+    width: 100%;
+    background-color: rgb(192, 226, 255);
+    display: flex;
+    gap: 12px;
+}
+
+.container > .column {
+    border: none;
+    padding: 8px;
+}
+
+.container > .column > .sub-container {
+    /* background-color: green; */
+}
+
+.container > .column > .sub-container.has-smaller-div {
+    display: flex;
+    gap: 8px;
+    padding: 12px;
+    align-items: center;
+
+}
+
+.container > .column > .sub-container > .smaller-div {
+    background-color: #fff;
+    height: 80%;
+    flex: 1;
+}
+
+.container > .column > .sub-container.extra-long {
+    background-color: cornflowerblue;
+    flex: 2;
+}
+
+.yellow {
+    background-color: rgb(255, 255, 189);
+}
+
+.purple {
+    background-color: rgb(153, 117, 153);
 }
